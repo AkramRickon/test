@@ -232,16 +232,29 @@ footer
 
 @media only screen and (max-width:688px)
 {
- 
+    footer 
+    {
+        width:100%;
+    }
     .footer-content img
     {
-        width:100%;  
+        width:300px;
+        height:63px;
     }
-    footer{
-        justify-items: start;
+    .section-container
+    {
+        width:100%;
     }
-}
-
-@media only screen and (min-width:688px) and (max-width:992px)
-{
+    .highlights-thumbnail img
+    {
+    width:100%;
+    }
+    .highlights-container
+    {
+        grid-template-columns: 1fr;
+    }
+    .players 
+    {
+        grid-template-columns: 1fr;
+    }
 }
