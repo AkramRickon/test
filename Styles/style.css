@@ -331,13 +331,13 @@ Media query for mobile */
     .players 
     {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
 
     }
     .highlights-container
     {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align:left;
     }
     .highlights-title
     {
@@ -391,7 +391,7 @@ Media query for Ipad */
     }
     .head-left .head-title
     {
-        padding-top:70px;
+        padding-top:30px;
         padding-bottom:5px;
         padding-left: 50px;
     }
@@ -404,9 +404,12 @@ Media query for Ipad */
     {
         margin:50px;
     }
+
     .section-container
     {
         width:100%;
+        margin-top:20px;
+
     }
 
     .head-right img 
@@ -420,7 +423,12 @@ Media query for Ipad */
     .highlights-container
     {
         grid-template-columns: repeat(1,1fr);
+        padding:0px 5px;
         text-align: center;
+    }
+    .highlights-details
+    {
+        text-align: left;
     }
     .frame-size
     {
