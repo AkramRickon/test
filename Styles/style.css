@@ -165,7 +165,20 @@ main
     width:550px;
     height:427px;
 }
-
+/*-------------------
+----Vieo highlights */
+.video-container
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-column-gap:30px;
+}
+.frame-size
+{
+    width:330px;
+    height:300px;
+}
 /* ------------------
 ----------Sponsors */
 
@@ -337,10 +350,23 @@ Media query for mobile */
     width:90%;
     padding-left:10px;
     }
-
+    .video-container
+    {
+        /* grid-template-columns:repeat(1,1fr);
+        grid-row-gap:30px;
+        text-align: center;
+        padding:0px 10px; 
+        */
+        display:flex;
+       flex-direction: column;
+       align-items: center;
+       row-gap:30px;
+    }
+    
     footer 
     {
         width:100%;
+        margin-top: 30px;
     }
 
     .footer-content img
@@ -395,5 +421,18 @@ Media query for Ipad */
     {
         grid-template-columns: repeat(1,1fr);
         text-align: center;
+    }
+    .frame-size
+    {
+        width:550px;
+    }
+
+    .video-container
+    {
+        display:flex;
+       flex-direction: column;
+       align-items: center;
+       row-gap:30px;
+        
     }
 }
